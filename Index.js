@@ -137,7 +137,8 @@ function book() {
     let bookingdetails={
       from :document.querySelector('#from').value,
       to :document.querySelector('#to').value,
-      date :document.querySelector('#date').value
+      date :document.querySelector('#date').value,
+      passengers :document.getElementById('totalpassenger')
     }
     
     if(bookingdetails.from==''){
@@ -185,6 +186,72 @@ function book() {
    let date=document.getElementById('traveldate')
    date.innerHTML=a.date
    date.style.color='#8e2158'
+}
+
+
+//Dropdown javascript
+
+let adcount=0
+let chcount=0
+let incount=0
+
+// for adult
+
+function adultadd(){
+    adcount++
+    document.getElementById('adultcounter').innerHTML=adcount
+}
+
+function adultsub(){
+    if(adcount>0){
+    adcount--
+    document.getElementById('adultcounter').innerHTML=adcount
+}
+
+}
+
+
+// for child
+
+function childadd(){
+    chcount++
+    document.getElementById('childcounter').innerHTML=chcount
+}
+
+function childsub(){
+    if(chcount>0){
+    chcount--
+    document.getElementById('childcounter').innerHTML=chcount
+}
+
+}
+
+// for infant
+
+function infantadd(){
+    incount++
+    document.getElementById('infantcounter').innerHTML=incount
+}
+
+function infantsub(){
+    if(incount>0){
+    incount--
+    document.getElementById('infantcounter').innerHTML=incount
+}
+
+}
+
+function totalcount(){
+      document.getElementById('totalpassenger').innerHTML=adcount+chcount+incount
+      let hide=document.querySelector('.dropdown')
+      hide.style.display='none'
+}
+
+
+function showdropdown(){
+    let hide=document.querySelector('.dropdown')
+    hide.style.display='block'
+
 }
 
 

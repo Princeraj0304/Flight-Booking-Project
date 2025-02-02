@@ -353,6 +353,14 @@ input::placeholder{
     border: 1px solid #d1d1d4;
     width: 25%;
     border-radius: 0px 10px 10px 0;
+    cursor: pointer;
+}
+
+.passclass p{
+    font-family:  "Montserrat", serif;
+   
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .from input{
@@ -497,4 +505,110 @@ input:-webkit-autofill {
 
   }
   
+ .dropdown{
+    position: relative;
+    left: 1000px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    bottom: 140px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 333px;
+    height: 480px;
+    background-color: white;
+    border: none;
+    display: none;
+ }
+
+ .dropdown p{
+    font-family:  "Montserrat", serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+
+   
+ }
+
+ .classic p{
+    margin-top: 20px;
+    font-weight: 600;
+ }
+
+
+ .adultsec{
+    font-family:  "Montserrat", serif;
+    margin-left: 20px;
+    margin-top: 30px;
+ }
+
+ #dropbutt{
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:  "Montserrat", serif;
+ }
+
  
+ #dropbutt2{
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:  "Montserrat", serif;
+ }
+
+ #childcounter, #adultcounter , #infantcounter{
+    margin-left: 20px;
+ }
+
+
+ .bubble{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family:  "Montserrat", serif;
+    
+ }
+
+ #buisness{
+    margin-top: 30px;
+ }
+
+ .bubble input{
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+ }
+
+
+ .dropbutton{
+  margin-top: 18px;
+  margin-left: 35px;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  background-color: #8f2158;
+  font-family:  "Montserrat", serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+ }
+
+.counterbutt{
+    color: white;
+    background-color: #8f2158;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.adultsec .span{
+    color: purple;
+    width: 20px;
+    padding-left: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}

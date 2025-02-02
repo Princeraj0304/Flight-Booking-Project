@@ -88,12 +88,12 @@
                </div>
 
 
-               <div class="passclass">
-                
-                
+               <div class="passclass" onclick="showdropdown()">
+                <p id="tpassenger"> <span id="totalpassenger">1</span > Passsengers Economy <i class="fa-light fa-caret-down"></i></p>              
                </div>
-
+               
                </div>
+              
             </form>
 
            
@@ -111,8 +111,59 @@
             <div class="promo">
            <button onclick="return book()"> <a href="searchflight.html"> Search Flight</button></a>
             </div>
+            
            </div>
+           
              </section>
+             <div class="dropdown">
+               <p class="droppass">Passenger</p><br>
+               <hr>
+
+               <div class="adultsec">
+
+                <span>Adult</span>
+                <button id="dropbutt" class="counterbutt" onclick="adultsub()">-</button>
+                <span id="adultcounter" class="span" >0</span>
+                <button id="dropbutt2"  class="counterbutt" onclick="adultadd()" >+</button>
+
+               </div>
+
+               <div class="adultsec">
+
+                <span>Child&nbsp;</span>
+                <button id="dropbutt"  class="counterbutt" onclick="childsub()">-</button>
+                <span id="childcounter" class="span" >0</span>
+                <button id="dropbutt2"  class="counterbutt" onclick="childadd()">+</button>
+
+               </div>
+
+               <div class="adultsec">
+
+                <span>Infant</span>
+                <button id="dropbutt"  class="counterbutt" onclick="infantsub()">-</button>
+                <span id="infantcounter" class="span" >0</span>
+                <button id="dropbutt2"  class="counterbutt" onclick="infantadd()">+</button>
+
+               </div>
+               <div class="classic">
+               <p class="droppass2">Class</p><br>
+            </div>
+               <hr>
+
+               <div class="bubble">
+                <input type="radio" name="" id="">
+                <span>Economy</span>
+                <br>
+                <input type="radio" name="" id="buisness">
+                <span>
+                    Premium(Business/First)</span>
+               </div>
+               
+               <button class="dropbutton" onclick="totalcount()">Confirm</button>
+                
+
+               </div>
+              
      </main>
 
      
