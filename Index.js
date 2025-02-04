@@ -159,7 +159,7 @@ function book() {
         document.querySelector('#ermsg').innerHTML='please enter the Journey Date'
         msgerror.style.visibility='visible'
         document.getElementById('date').focus()
-         return false
+        return false
      }
 
 
