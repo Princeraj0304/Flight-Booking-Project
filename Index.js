@@ -138,7 +138,7 @@ function book() {
       from :document.querySelector('#from').value,
       to :document.querySelector('#to').value,
       date :document.querySelector('#date').value,
-      passengers :document.getElementById('totalpassenger')
+      passengers :document.getElementById('totalpassenger').textContent
     }
     
     if(bookingdetails.from==''){
