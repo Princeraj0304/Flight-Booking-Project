@@ -149,7 +149,7 @@ function book() {
     }
     
     else if(bookingdetails.to==''){
-        document.querySelector('#ermsg').innerHTML='please enter your Finaa Destination'
+        document.querySelector('#ermsg').innerHTML='please enter your Final Destination'
         msgerror.style.visibility='visible'
         document.getElementById('to').focus()
          return false
