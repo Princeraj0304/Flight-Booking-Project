@@ -1,18 +1,11 @@
 {
   "passengers": [
     {
-      "id": "878f",
-      "firstname": "prince",
-      "lastname": "Raj",
+      "id": "83f7",
+      "firstname": "Nisha",
+      "lastname": "sharma",
       "age": "20",
-      "passportnumber": "123"
-    },
-    {
-      "id": "c022",
-      "firstname": "Rahil",
-      "lastname": "Roy",
-      "age": "20",
-      "passportnumber": "123"
+      "passportnumber": "12345"
     }
   ]
 }

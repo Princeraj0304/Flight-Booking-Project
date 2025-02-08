@@ -664,17 +664,19 @@ input:-webkit-autofill {
 }
 
 .passformii{
+    padding-top: 20px;
     width: 600px;
-    height: 600px;
+    padding-bottom: 20px;
     border: 1px solid;
     position: absolute;
     left: 800px;
-    bottom: 30px;
+    top: 85px;
     background-color: white;
     border-radius: 10px;
     border: none;
     display: none;
     font-family:  "Montserrat", serif;
+    cursor: pointer;
 }
 
 .bss{
@@ -687,6 +689,11 @@ input:-webkit-autofill {
     padding: 15px;
     margin-left: 20px;
     border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:  "Montserrat", serif;
    
 }
 
@@ -697,10 +704,16 @@ input:-webkit-autofill {
     padding: 15px;
     margin-left: 20px;
     border-radius: 10px;
+    font-family:  "Montserrat", serif;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .passformii label{
     margin-left: 20px;
+    font-weight: 450;
+    cursor: pointer;
+    
 }
 
 .passformii #sfsub{
@@ -710,6 +723,7 @@ input:-webkit-autofill {
     width: 535px;
     font-family:  "Montserrat", serif;
     font-size: 15px;
+    cursor: pointer;
 }
 
 #searchflightbutton{
@@ -725,4 +739,8 @@ input:-webkit-autofill {
     border-radius: 50px;
     margin-left: 40px;
     cursor: pointer;
+}
+
+.passformii option{
+    font-family:  "Montserrat", serif;
 }
