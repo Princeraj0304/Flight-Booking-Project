@@ -138,7 +138,7 @@ function book() {
       from :document.querySelector('#from').value,
       to :document.querySelector('#to').value,
       date :document.querySelector('#date').value,
-      passengers :document.getElementById('totalpassenger').textContent
+      passengers :document.getElementById('totalpassenger').innerHTML
     }
     
     if(bookingdetails.from==''){
@@ -175,17 +175,17 @@ function book() {
  
    let from=document.getElementById('travelfrom')
    from.innerHTML=a.from
-   from.style.color='#8e2158'
+   from.style.color='#c60c31'
 
 
    let to=document.getElementById('travelto')
 
    to.innerHTML=a.to
-   to.style.color='#8e2158'
+   to.style.color='#c60c31'
 
    let date=document.getElementById('traveldate')
    date.innerHTML=a.date
-   date.style.color='#8e2158'
+   date.style.color='#c60c31'
 }
 
 
@@ -255,5 +255,25 @@ function showdropdown(){
 }
 
 
+
+let a=JSON.parse(localStorage.getItem('traveldetails'))
+console.log(a.passengers);
+let b=a.passengers
+
+let arr=['First','Second','Third','Fourth','Fifth','Sixth','Seventh']
+let d=document.getElementById('det')
+
+for(let i=0;i<b;i++){
+let para=document.createElement('div')
+para.innerHTML=arr[i]+"  "+" passenger"
+
+para.classList.add('bookingformappear')
+d.appendChild(para)
+
+para.addEventListener('click',()=>{
+    let p=document.querySelector('.passformii')
+    p.style.display='block'
+})
+}
 
 

@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #f6f6f6;
+    background-color: #f2f2fa;
 }
 
 .loginheader{
@@ -187,7 +187,7 @@ input::placeholder{
 #error {
     margin-top: 10px;
     background-color: #f4e7e6;
-    color: #6f2020;
+    color: #c60c31;
     border-radius: 5px;
     width: 400px;
     display: none;
@@ -300,7 +300,7 @@ input::placeholder{
 
 
 .bookflight{
-    color: #8f2158;
+    color: #c60c31;
     font-weight: 500;
     cursor: pointer;
 }
@@ -367,7 +367,7 @@ input::placeholder{
     border: none;
     outline: none;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 20px;
     cursor: pointer;
     color: #1f222a;
@@ -378,7 +378,7 @@ input::placeholder{
     border: none;
     outline: none;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 20px;
     cursor: pointer;
     color: #1f222a;
@@ -389,7 +389,7 @@ input::placeholder{
     border: none;
     outline: none;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 20px;
     cursor: pointer;
     color: #1f222a;
@@ -414,12 +414,12 @@ input::placeholder{
 
 
 .promo p{
-    background-color: purple;
+    background-color: #c60c31;
    
 }
 
 .promo button{
-    background-color: #8f2158;
+    background-color: #c60c31;
     color: white;
     padding-left: 40px ;
     padding-right: 40px;
@@ -590,7 +590,7 @@ input:-webkit-autofill {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 50px;
-  background-color: #8f2158;
+  background-color: #c60c31;
   font-family:  "Montserrat", serif;
   color: white;
   border: none;
@@ -599,16 +599,130 @@ input:-webkit-autofill {
 
 .counterbutt{
     color: white;
-    background-color: #8f2158;
+    background-color: #c60c31;
     border: none;
     cursor: pointer;
     border-radius: 50px;
 }
 
 .adultsec .span{
-    color: purple;
+    color: #c60c31;
     width: 20px;
     padding-left: 5px;
     display: inline-block;
     margin-left: 10px;
+}
+
+#spanfrom{
+    font-size: 12px;
+    font-family:  "Montserrat", serif;
+    position: relative;
+    bottom: 144px;
+    left: 52px;
+}
+
+#spanto{
+    font-size: 12px;
+    font-family:  "Montserrat", serif;
+    position: relative;
+    bottom: 144px;
+    left: 19rem;
+}
+
+#spandepart{
+    font-size: 12px;
+    font-family:  "Montserrat", serif;
+    position: relative;
+    bottom: 144px;
+    left: 36rem;
+}
+
+#spanpassenger{
+    font-size: 12px;
+    font-family:  "Montserrat", serif;
+    position: relative;
+    bottom: 144px;
+    left: 51rem;
+}
+
+#tpassenger{
+    margin-top: 20px;
+}
+
+.bookingformappear{
+    background-color: white;
+    width:300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid rgb(224, 219, 219);
+    border-radius: 10px;
+    margin-left: 40px;
+    padding-left: 200px;
+    padding-right: 30px;
+    font-family:  "Montserrat", serif;
+    cursor: pointer;
+}
+
+.passformii{
+    width: 600px;
+    height: 600px;
+    border: 1px solid;
+    position: absolute;
+    left: 800px;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    display: none;
+    font-family:  "Montserrat", serif;
+}
+
+.bss{
+    display: flex;
+}
+
+.passformii input{
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+   
+}
+
+.passformii select{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 530px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.passformii label{
+    margin-left: 20px;
+}
+
+.passformii #sfsub{
+    background-color: #c60c31;
+    color: white;
+    border: none;
+    width: 535px;
+    font-family:  "Montserrat", serif;
+    font-size: 15px;
+}
+
+#searchflightbutton{
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    background-color: #c60c31;
+    border: 1px solid;
+    color: white;
+    font-family:  "Montserrat", serif;
+    border-radius: 50px;
+    margin-left: 40px;
+    cursor: pointer;
 }

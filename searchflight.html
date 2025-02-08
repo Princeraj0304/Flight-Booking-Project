@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="Login.css">
 </head>
@@ -28,7 +29,7 @@
         </div>
         <div class="head2">
            <a href="Login.html"> <p>Login</p></a>
-           <a href="signup.html"> <p>Signup</p></a>
+           <a href="index.html"> <p>Signup</p></a>
         </div>
         </section>
     </header>
@@ -42,8 +43,64 @@
             <p>select your departure flight</p>
             <p>from <span id="travelfrom"></span> to <span id="travelto"></span></p>
         </div>
+<br>
+        <div class="travelfromto">
+            <p>Who's Travelling ?</p>
+        </div>
     </main>
+<br><br><br>
+    <div class="bss">
+    <div id="det"></div>
+
+    <section class="passformii">
+        <form action="" onsubmit="return formsub()">
+       
+         <label for="">Title</label><br>
+         <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+         </select>
+<br><br>
+        <label for="firstname">First Name on passport</label><br>
+        <input type="text" name="" id="firstname">
+        <span id="firstnameerror"></span>
+<br><br>
+        <label for="lastname">Last Name on passport</label><br>
+        <input type="text" name="" id="lastname">
+        <span id="lastnameerror"></span>
+<br><br>
+        <label for="age">Age</label><br>
+        <input type="text" name="" id="age">
+        <span id="ageerror"></span>
+<br><br>
+        <label for="passportnumber">passport number</label><br>
+        <input type="text" name="" id="passportnumber">
+        <span id="numbererror"></span>
+<br><br>
+      
+        <input type="submit" name="" id="sfsub" value="save and continue">
+        </form>
+    </section>
+    
+</div>
+<a href="database.html"><button id="searchflightbutton">Confirm</button></a>
+
+<footer>
+    <div class="foot">
+        <p>Emirates</p>
+        <p>></p>
+        <p3>About Emirates Skywards</p3>
+        <p>></p>
+        <p>Skywards Registration</p>
+    </div>
+   </footer>
 
     <script src="Index.js"></script>
+    <script src="database.js"></script>
+  
+
+
 </body>
 </html>
