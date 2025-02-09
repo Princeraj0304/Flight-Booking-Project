@@ -332,26 +332,26 @@ let a=JSON.parse(localStorage.getItem('traveldetails'))
 console.log(a.passengers);
 let b=a.passengers
 
-let arr=['First','Second','Third','Fourth','Fifth','Sixth','Seventh']
-let d=document.getElementById('det')
+let d=document.getElementById('deti')
 
 for(let i=0;i<b;i++){
 let para=document.createElement('div')
-para.innerHTML='<i class="fa-solid fa-user"></i>'+" "+arr[i]+"  "+" passenger"
 
 para.classList.add('bookingformappear')
 d.appendChild(para)
+para.style.marginLeft='55px'
 
-para.style.borderRadius='25px'
-para.style.marginTop='10px'
-para.style.boxShadow='box-shadow: 0 1px 3px rgba(0,0,0,0.25)'
+
+
 
 
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
     p.style.visibility='visible'
     p.style.opacity='1'
-     para.style.border='2px solid gray'
+    para.style.border='2px solid red'
+    para.style.backgroundImage="url('success.gif')"
+    
    
     
 

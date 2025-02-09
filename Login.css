@@ -660,15 +660,14 @@ input:-webkit-autofill {
 }
 
 .bookingformappear{
+    
+    background-image: url('add2.gif');
+    border: 2px solid pink;
+    background-size: cover;
+    border-radius: 100px;
     background-color: white;
-    width:300px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: 1px solid rgb(224, 219, 219);
-    border-radius: 10px;
-    margin-left: 40px;
-    padding-left: 200px;
-    padding-right: 30px;
+    padding: 40px;
+    margin-left: 30px;
     font-family:  "Montserrat", serif;
     cursor: pointer;
 }
@@ -680,7 +679,7 @@ input:-webkit-autofill {
     border: 1px solid;
     position: absolute;
     left: 800px;
-    top: 88px;
+    top: 82px;
     background-color: white ;
     border-radius: 10px;
     border: none;
@@ -694,6 +693,7 @@ input:-webkit-autofill {
 
 .bss{
     display: flex;
+    
 }
 
 .passformii input{
@@ -914,4 +914,12 @@ input:-webkit-autofill {
     margin-left: 20px;
     margin-top: 20px;
     font-weight: 400;
+}
+
+#deti{
+    display: flex;
+    width: 2px;
+    border-radius: 50%;
+
+
 }
