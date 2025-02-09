@@ -44,16 +44,18 @@
             <p>from <span id="travelfrom"></span> to <span id="travelto"></span></p>
         </div>
 <br>
-        <div class="travelfromto">
+        <div class="travelfromtoo">
             <p>Who's Travelling ?</p>
         </div>
     </main>
 <br><br><br>
     <div class="bss">
-    <div id="det"></div>
+        
+    <span id="det"></span>
 
     <section class="passformii">
-        <form action="" onsubmit="return formsub()">
+    
+        <form action="" onsubmit="return validate()">
        
          <label for="">Title</label><br>
          <select name="" id="passselect">
@@ -64,31 +66,31 @@
             <option value="Dr">Dr</option>
          </select>
 <br><br>
-        <label for="firstname">First Name on passport</label><br>
+        <label for="firstname">First Name on passport </label><span id="firstnameerror"></span><br>
         <input type="text" name="" id="firstname" placeholder="Enter your first name">
-        <span id="firstnameerror"></span>
+        
 <br><br>
-        <label for="lastname">Last Name on passport</label><br>
+        <label for="lastname">Last Name on passport </label><span id="lastnameerror"></span><br>
         <input type="text" name="" id="lastname" placeholder="Enter your last name">
-        <span id="lastnameerror"></span>
+        
 <br><br>
   
-        <label for="age">Age</label><br>
+        <label for="age">Age </label><span id="ageerror"></span><br>
         <input type="text" name="" id="age" placeholder="Enter your age">
 
 <br><br>
 <label for="">Nationality</label><br>
-<select name="" id="passselect">
+<select name="" id="nationselect">
    <option value="Indian">Indian</option>
    <option value="japan">Japan</option>
    <option value="British">British</option>
    <option value="brazil">Brazil</option>
-   <option value="italy">Intaly</option>
+   <option value="italy">Italy</option>
 </select>
 <br><br>
-        <label for="passportnumber">passport number</label><br>
+        <label for="passportnumber">passport number</label><span id="numbererror"></span><br>
         <input type="text" name="" id="passportnumber" placeholder="Enter your passport number">
-        <span id="numbererror"></span>
+        
 <br><br>
       
         <input type="submit" name="" id="sfsub" value="save and continue">
@@ -98,6 +100,19 @@
 </div>
 <a href="database.html"><button id="searchflightbutton">Confirm</button></a>
 
+
+<div class="toggle">
+    <p>Save yout Details to use auto-fill</p>
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>
+</div>
+<br>
+<div class="graph">
+    <p>The information provided above will be processed according to <a href="">Emirates Airways Pvt.Ltd </a></p>
+
+</div>
 <footer>
     <div class="foot">
         <p>Emirates</p>
@@ -110,7 +125,6 @@
 
     <script src="Index.js"></script>
     <script src="database.js"></script>
-  
 
 
 </body>

@@ -504,6 +504,16 @@ input:-webkit-autofill {
     font-weight: 300;
 
   }
+
+  .travelfromtoo{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family:  "Montserrat", serif;
+    font-size: 30px;
+    color: #333333;
+    font-weight: 300;
+
+  }
   
  .dropdown{
     position: relative;
@@ -665,18 +675,21 @@ input:-webkit-autofill {
 
 .passformii{
     padding-top: 20px;
-    width: 600px;
+    width: 580px;
     padding-bottom: 20px;
     border: 1px solid;
     position: absolute;
     left: 800px;
-    top: 85px;
-    background-color: white;
+    top: 88px;
+    background-color: white ;
     border-radius: 10px;
     border: none;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     font-family:  "Montserrat", serif;
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .bss{
@@ -694,6 +707,7 @@ input:-webkit-autofill {
     cursor: pointer;
     font-size: 16px;
     font-family:  "Montserrat", serif;
+
    
 }
 
@@ -707,12 +721,16 @@ input:-webkit-autofill {
     font-family:  "Montserrat", serif;
     font-size: 16px;
     cursor: pointer;
+
 }
 
 .passformii label{
     margin-left: 20px;
     font-weight: 450;
     cursor: pointer;
+    font-weight: 600;
+    color: red;
+    font-family:  "Montserrat", serif;
     
 }
 
@@ -739,8 +757,152 @@ input:-webkit-autofill {
     border-radius: 50px;
     margin-left: 40px;
     cursor: pointer;
+    
 }
 
 .passformii option{
     font-family:  "Montserrat", serif;
+}
+
+#firstnameerror ,#lastnameerror,#numbererror,#ageerror{
+    background-color: #f4e7e6;
+    color: #c60c31;
+    display: none;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+.slider {
+    background-color: #ffffff2b;
+    border-radius: 100px;
+    padding: 1px;
+    margin: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 51px;
+    height: 29px;
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, rgba(0, 0, 0, 0.21) 0px 0px 0px 24px inset,
+          #22cc3f 0px 0px 0px 0px inset, rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .slider::after {
+    content: "";
+    display: flex;
+    top: 2.3px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #e3e3e3;
+    border-radius: 200px;
+    position: absolute;
+    box-shadow: transparent 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+    transition: left 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: left, background-color;
+  }
+  
+  .switch input[type="checkbox"]:checked + .slider {
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, #22cc3f 0px 0px 0px 2px inset, #22cc3f 0px 0px 0px 24px inset,
+          rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .switch input[type="checkbox"]:checked + .slider::after {
+    left: 24px;
+  }
+  
+  .switch input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggle{
+    padding: 15px;
+    width: 510px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    font-family:  "Montserrat", serif;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
+
+  .toggle p{
+    
+    font-weight: 450;
+    margin-top: 15px;
+  }
+
+
+  .graph {
+    font-family:  "Montserrat", serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    gap: 450px;
+  }
+
+  .travelfromtoo p {
+    margin-top: 45px;
+    color: #6f2020;
+}
+
+
+/* table css */
+
+.passengertable{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 20px ;
+    min-width: 400px;
+    font-family:  "Montserrat", serif;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+  
+}
+
+.passengertable thead tr{
+    background-color: #c60c31;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+   
+
+}
+
+.passengertable th, .passengertable td{
+    padding: 12px 15px;
+}
+
+
+.passengertable tbody tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.passengertable tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.passengertable tbody tr:last-of-type{
+    border-bottom: 2px solid #c60c31;
+}
+
+
+
+#userid{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#edituser{
+    margin-left: 10px;
+    cursor: pointer;
 }

@@ -9,8 +9,9 @@ let b=res.map((e)=>`
 <td>${e.lastname}</td> 
 <td>${e.age}</td> 
 <td>${e.passportnumber}</td> 
-<td><button onclick="mydelete('${e.id}')">Delete</button></td>
-<td><button onclick="myedit('${e.id}')">edit</button></td>
+<td><i class="fa-solid fa-user-minus" onclick="mydelete('${e.id}')" id='userid'></i></td>
+<td><i class="fa-solid fa-user-pen"  onclick="myedit('${e.id}')" id='edituser'></i></td>
+
 
 </tr>
 `).join('')
@@ -28,15 +29,8 @@ function mydelete(id){
     .then(res=>alert("Passenger removed"))
 }
 
-function myedit(id){
-    fetch(`http://localhost:3000/passengers/${id}`,{
-        method : "PATCH"
-    })
-    .then(res=>alert("Passenger updated"))
-}
 
-
-function formsub(){
+function validate(){
     let getdata={
         firstname : document.getElementById('firstname').value,
         lastname : document.getElementById('lastname').value,
@@ -53,3 +47,6 @@ function formsub(){
 
 
 }
+
+
+

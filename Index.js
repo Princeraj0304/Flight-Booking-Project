@@ -265,15 +265,76 @@ let d=document.getElementById('det')
 
 for(let i=0;i<b;i++){
 let para=document.createElement('div')
-para.innerHTML=arr[i]+"  "+" passenger"
+para.innerHTML='<i class="fa-solid fa-user"></i>'+" "+arr[i]+"  "+" passenger"
 
 para.classList.add('bookingformappear')
 d.appendChild(para)
 
+para.style.borderRadius='25px'
+para.style.marginTop='10px'
+para.style.boxShadow='box-shadow: 0 1px 3px rgba(0,0,0,0.25)'
+
+
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
-    p.style.display='block'
+    p.style.visibility='visible'
+    p.style.opacity='1'
+     para.style.border='2px solid gray'
+   
+    
+
 })
 }
 
 
+
+// function validate(){
+//   let firstname= document.getElementById('firstname').value
+//   let lastname= document.getElementById('lastname').value
+//   let age= document.getElementById('age').value
+//   let passnumber= document.getElementById('passportnumber').value
+
+//   if(firstname==''){
+//     let fne=document.getElementById('firstnameerror')
+//     fne.innerHTML='please enter your first name'
+//     fne.style.display='inline-block'
+//     document.getElementById('firstname').focus()
+//     return false
+//   }
+
+//   else if(lastname==''){
+//     let lne=document.getElementById('lastnameerror')
+//     lne.innerHTML='please enter your last name'
+//     lne.style.display='inline-block'
+//     document.getElementById('lastname').focus()
+//     return false
+//   }
+  
+//   else if(age==''){
+//     let age=document.getElementById('ageerror')
+//     age.innerHTML='please enter your age'
+//     age.style.display='inline-block'
+//     document.getElementById('age').focus()
+//     return false
+//   }
+
+//   else if(passnumber==''){
+//     let passnum=document.getElementById('numbererror')
+//     passnum.innerHTML='please enter your passport number'
+//     passnum.style.display='inline-block'
+//     document.getElementById('passportnumber').focus()
+//     return false
+//   }
+
+//   else if(passnumber.length>8|| passnumber.length<8){
+//     let passnum=document.getElementById('numbererror')
+//     passnum.innerHTML='Please Enter valid 8 digit number'
+//     passnum.style.display='inline-block'
+//     document.getElementById('passportnumber').focus()
+//     return false
+//   }
+  
+  
+
+
+// }
