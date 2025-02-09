@@ -6,13 +6,6 @@
       "lastname": "Raj",
       "age": "20",
       "passportnumber": "12345678"
-    },
-    {
-      "id": "e33c",
-      "firstname": "Rahil",
-      "lastname": "Roy",
-      "age": "23",
-      "passportnumber": "12345433"
     }
   ]
 }

@@ -10,8 +10,9 @@ let b=res.map((e)=>`
 <td>${e.lastname}</td> 
 <td>${e.age}</td> 
 <td>${e.passportnumber}</td> 
-<td><i class="fa-solid fa-user-minus" onclick="mydelete('${e.id}')" id='userid'></i></td>
-<td><i class="fa-solid fa-user-pen"  onclick="myedit('${e.id}')" id='edituser'></i></td>
+<td><img src='x-button.png' width='25px' id='userid' onclick="mydelete('${e.id}')"></td>
+<td><img src='edit.png' width='25px' id='edituser' onclick="mydelete('${e.id}')"></td>
+
 </tr>
 <tr>
 `).join('')
@@ -32,12 +33,14 @@ document.getElementById('table').innerHTML=b
 
 getdata()
 
+
 function mydelete(id){
     fetch(`http://localhost:3000/passengers/${id}`,{
         method : "DELETE"
     })
     .then(res=>alert("Passenger removed"))
 }
+
 
 
 function validate(){
@@ -58,7 +61,6 @@ function validate(){
 
 }
 
-document.getElementById('tfare').textContent=1500
 
 
 

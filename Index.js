@@ -209,7 +209,7 @@ function book() {
 
  if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='mumbai'){
      let passengerfare=totalpass*prices.mumbai
-     console.log(passengerfare)
+ 
  }
  
 else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
@@ -256,8 +256,10 @@ else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
      console.log(totalpass*prices.pune);
  }
 
+
  
 }
+
 
 
 
