@@ -858,7 +858,8 @@ input:-webkit-autofill {
 
 .passengertable{
     border-collapse: collapse;
-    margin: 25px;
+    margin-top: 100px;
+    margin-left: 300px;
     font-size: 20px ;
     min-width: 400px;
     font-family:  "Montserrat", serif;
@@ -905,4 +906,12 @@ input:-webkit-autofill {
 #edituser{
     margin-left: 10px;
     cursor: pointer;
+}
+
+.tabledetails{
+    font-family:  "Montserrat", serif;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 400;
 }

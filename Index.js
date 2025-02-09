@@ -168,7 +168,8 @@ function book() {
  
 
 }
-  
+
+
  window.onload=  function (){
 
    let a= JSON.parse(localStorage.getItem('traveldetails'))
@@ -186,7 +187,78 @@ function book() {
    let date=document.getElementById('traveldate')
    date.innerHTML=a.date
    date.style.color='#c60c31'
+
+
+       
+    
+   let passdetails= JSON.parse(localStorage.getItem('traveldetails'))
+   let totalpass=passdetails.passengers
+   let passfrom=passdetails.from
+   let passto=passdetails.to
+   
+   
+
+ let prices = {
+     'mumbai': 100,
+     'delhi': 200,
+     'indore': 300,
+     'patna': 400,
+     'bangalore': 500,
+     'pune': 600
+ };
+
+ if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='mumbai'){
+     let passengerfare=totalpass*prices.mumbai
+     console.log(passengerfare)
+ }
+ 
+else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.mumbai);
+ }
+
+ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='delhi'){
+     console.log(totalpass*prices.delhi);
+ }
+
+ else if(passfrom.toLowerCase()=='delhi' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.delhi);
+ }
+
+ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='indore'){
+     console.log(totalpass*prices.indore);
+ }
+
+ else if(passfrom.toLowerCase()=='indore' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.indore);
+ }
+
+ else if(passfrom.toLowerCase()=='patna' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.patna);
+ }
+
+ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='patna'){
+     console.log(totalpass*prices.patna);
+ }
+
+ else if(passfrom.toLowerCase()=='banglore' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.bangalore);
+ }
+
+ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='banglore'){
+     console.log(totalpass*prices.bangalore);
+ }
+
+ else if(passfrom.toLowerCase()=='pune' && passto.toLowerCase()=='bhopal'){
+     console.log(totalpass*prices.pune);
+ } 
+ 
+ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='pune'){
+     console.log(totalpass*prices.pune);
+ }
+
+ 
 }
+
 
 
 //Dropdown javascript
@@ -338,3 +410,6 @@ para.addEventListener('click',()=>{
 
 
 // }
+
+
+

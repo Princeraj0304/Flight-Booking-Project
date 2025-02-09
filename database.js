@@ -1,3 +1,4 @@
+
 async function getdata(){
     let data= await fetch('http://localhost:3000/passengers')
     let res = await data.json()
@@ -11,10 +12,19 @@ let b=res.map((e)=>`
 <td>${e.passportnumber}</td> 
 <td><i class="fa-solid fa-user-minus" onclick="mydelete('${e.id}')" id='userid'></i></td>
 <td><i class="fa-solid fa-user-pen"  onclick="myedit('${e.id}')" id='edituser'></i></td>
-
-
 </tr>
+<tr>
 `).join('')
+
+b+=`<td colspan="5">Total amount </td>
+<td colspan=3>$<span id='tfare'>10000</span></td>
+</tr>`
+
+setTimeout(()=>{
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML='hello'
+},100)
+
 
 document.getElementById('table').innerHTML=b
 
@@ -47,6 +57,8 @@ function validate(){
 
 
 }
+
+document.getElementById('tfare').textContent=1500
 
 
 
