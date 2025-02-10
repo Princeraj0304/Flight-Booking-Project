@@ -907,12 +907,13 @@ input:-webkit-autofill {
     cursor: pointer;
 }
 
-.tabledetails{
+.tabledetails p{
     font-family:  "Montserrat", serif;
-    font-size: 35px;
+    font-size: 50px;
     margin-left: 20px;
     margin-top: 20px;
-    font-weight: 400;
+    font-weight: 600;
+    color: #6f2020;
 }
 
 #deti{
@@ -921,4 +922,44 @@ input:-webkit-autofill {
     border-radius: 50%;
 
 
+}
+
+
+.pasify{
+    display: flex;
+    margin-top: 80px;
+    font-family:  "Montserrat", serif;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.pasify p{
+   margin-top: 20px;
+   font-weight: 400;
+}
+
+.pasify span{
+    color: #43a54e;
+    font-weight: 700;
+   
+}
+
+.pasify #rupee{
+    color: #43a54e;
+}
+
+.pasify button{
+    padding: 15px 50px;
+    border-radius: 50px;
+    color: white;
+    font-family:  "Montserrat", serif;
+    background-color: #c60c31;
+    border: none;
+    cursor: pointer;
+}
+
+
+#rupees{
+    color: #43a54e;
+    font-weight: 700;
+   
 }

@@ -11,19 +11,19 @@ let b=res.map((e)=>`
 <td>${e.age}</td> 
 <td>${e.passportnumber}</td> 
 <td><img src='x-button.png' width='25px' id='userid' onclick="mydelete('${e.id}')"></td>
-<td><img src='edit.png' width='25px' id='edituser' onclick="mydelete('${e.id}')"></td>
+<td><img src='edit.png' width='25px' id='edituser' onclick="myedit('${e.id}')"></td>
 
 </tr>
 <tr>
 `).join('')
 
 b+=`<td colspan="5">Total amount </td>
-<td colspan=3>$<span id='tfare'>10000</span></td>
+<td colspan=3><span id='rupees'> ₹ <span id='tfare'> </span></td>
 </tr>`
 
 setTimeout(()=>{
     let updatedfare=document.getElementById('tfare')
-    updatedfare.innerHTML='hello'
+    updatedfare.innerHTML=totalpass*prices.mumbai
 },100)
 
 
