@@ -278,58 +278,94 @@ let prices = {
   'pune': 6024
 };
 
+setTimeout(()=>{
+
 if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='mumbai'){
-   tflare= document.getElementById('passfare')
+   let updatedfare=document.getElementById('tfare')
+   updatedfare.innerHTML=totalpass*prices.mumbai
+   let tflare= document.getElementById('passfare')
    tflare.innerHTML=totalpass*prices.mumbai
-   console.log(totalpass*prices.mumbai);
 
 }
 
 else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.mumbai);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.mumbai
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.mumbai
 }
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='delhi'){
-  console.log(totalpass*prices.delhi);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.delhi
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.delhi
 }
 
 else if(passfrom.toLowerCase()=='delhi' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.delhi);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.delhi
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.delhi
 }
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='indore'){
-  console.log(totalpass*prices.indore);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.indore
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.indore
 }
 
 else if(passfrom.toLowerCase()=='indore' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.indore);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.indore
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.indore
 }
 
 else if(passfrom.toLowerCase()=='patna' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.patna);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.patna
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.patna
 }
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='patna'){
-  console.log(totalpass*prices.patna);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.patna
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.patna
 }
 
 else if(passfrom.toLowerCase()=='banglore' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.bangalore);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.bangalore
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.bangalore
 }
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='banglore'){
-  console.log(totalpass*prices.bangalore);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.bangalore
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.bangalore
 }
 
 else if(passfrom.toLowerCase()=='pune' && passto.toLowerCase()=='bhopal'){
-  console.log(totalpass*prices.pune);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.pune
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.pune
 } 
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='pune'){
-  console.log(totalpass*prices.pune);
+    let updatedfare=document.getElementById('tfare')
+    updatedfare.innerHTML=totalpass*prices.pune
+    let tflare= document.getElementById('passfare')
+    tflare.innerHTML=totalpass*prices.pune
 }
-
-
+}
+,100)
 
 
 //Total passengers 
@@ -340,6 +376,8 @@ let b=a.passengers
 
 let d=document.getElementById('deti')
 
+let state=JSON.parse(localStorage.getItem('state')) || Array(b).fill(0)
+
 for(let i=0;i<b;i++){
 let para=document.createElement('div')
 
@@ -348,74 +386,26 @@ d.appendChild(para)
 para.style.marginLeft='55px'
 
 
+if(state[i]){
+    para.style.backgroundImage="url('success.gif')"
+}
 
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
     p.style.visibility='visible'
     p.style.opacity='1'
     para.style.border='2px solid red'
+      
+    state[i]=1
+    localStorage.setItem('state',JSON.stringify(state))
     para.style.backgroundImage="url('success.gif')"
-    
-   
-    
 
 })
 }
 
-
-//local srver form validation
-
-// function validate(){
-//   let firstname= document.getElementById('firstname').value
-//   let lastname= document.getElementById('lastname').value
-//   let age= document.getElementById('age').value
-//   let passnumber= document.getElementById('passportnumber').value
-
-//   if(firstname==''){
-//     let fne=document.getElementById('firstnameerror')
-//     fne.innerHTML='please enter your first name'
-//     fne.style.display='inline-block'
-//     document.getElementById('firstname').focus()
-//     return false
-//   }
-
-//   else if(lastname==''){
-//     let lne=document.getElementById('lastnameerror')
-//     lne.innerHTML='please enter your last name'
-//     lne.style.display='inline-block'
-//     document.getElementById('lastname').focus()
-//     return false
-//   }
-  
-//   else if(age==''){
-//     let age=document.getElementById('ageerror')
-//     age.innerHTML='please enter your age'
-//     age.style.display='inline-block'
-//     document.getElementById('age').focus()
-//     return false
-//   }
-
-//   else if(passnumber==''){
-//     let passnum=document.getElementById('numbererror')
-//     passnum.innerHTML='please enter your passport number'
-//     passnum.style.display='inline-block'
-//     document.getElementById('passportnumber').focus()
-//     return false
-//   }
-
-//   else if(passnumber.length>8|| passnumber.length<8){
-//     let passnum=document.getElementById('numbererror')
-//     passnum.innerHTML='Please Enter valid 8 digit number'
-//     passnum.style.display='inline-block'
-//     document.getElementById('passportnumber').focus()
-//     return false
-//   }
-  
-  
-
-
-// }
-
-
+function resetbutton(){
+    localStorage.removeItem('state')
+    location.reload()
+}
 
 

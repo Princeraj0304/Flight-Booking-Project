@@ -4,6 +4,7 @@
 }
 body{
     background-color: #f2f2fa;
+
 }
 
 .loginheader{
@@ -330,6 +331,7 @@ input::placeholder{
 
 
 
+
 .from {
     border: 1px solid #d1d1d4;
     width: 25%;
@@ -615,7 +617,7 @@ input:-webkit-autofill {
 }
 
 .adultsec .span{
-    color: #c60c31;
+    color: black;
     width: 20px;
     padding-left: 5px;
     display: inline-block;
@@ -628,6 +630,7 @@ input:-webkit-autofill {
     position: relative;
     bottom: 144px;
     left: 52px;
+    color: red;
 }
 
 #spanto{
@@ -636,6 +639,7 @@ input:-webkit-autofill {
     position: relative;
     bottom: 144px;
     left: 19rem;
+    color: red;
 }
 
 #spandepart{
@@ -644,6 +648,7 @@ input:-webkit-autofill {
     position: relative;
     bottom: 144px;
     left: 36rem;
+    color: red;
 }
 
 #spanpassenger{
@@ -652,6 +657,7 @@ input:-webkit-autofill {
     position: relative;
     bottom: 144px;
     left: 51rem;
+    color: red;
 }
 
 #tpassenger{
@@ -858,7 +864,7 @@ input:-webkit-autofill {
 .passengertable{
     border-collapse: collapse;
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 30px;
     font-size: 20px ;
     min-width: 400px;
     font-family:  "Montserrat", serif;
@@ -872,9 +878,6 @@ input:-webkit-autofill {
     background-color: #c60c31;
     color: white;
     text-align: left;
-    
-   
-
 }
 
 .passengertable th, .passengertable td{
@@ -929,7 +932,8 @@ input:-webkit-autofill {
     display: flex;
     margin-top: 80px;
     font-family:  "Montserrat", serif;
-    justify-content: space-around;
+    margin-left: 30px;
+    gap: 400px;
     font-size: 25px;
 }
 .pasify p{
@@ -962,4 +966,62 @@ input:-webkit-autofill {
     color: #43a54e;
     font-weight: 700;
    
+}
+
+#updateform{
+    padding-bottom: 15px;
+}
+
+#updateform form{
+    padding-top: 20px;
+    width: 580px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    position: absolute;
+    left: 920px;
+    top: 100px;
+    background-color: white ;
+    border-radius: 10px;
+    border: none;
+    font-family:  "Montserrat", serif;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+#updateform input{
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:  "Montserrat", serif;
+
+   
+}
+
+
+#updateform label{
+    margin-left: 20px;
+    font-weight: 450;
+    cursor: pointer;
+    font-weight: 600;
+    color: red;
+    font-family:  "Montserrat", serif;
+    
+}
+
+#updateform #updatebutton {
+    background-color: #c60c31;
+    width: 530px;
+    color: white;
+    border: none;
+    font-family:  "Montserrat", serif;
+    font-size: 15px;
+    cursor: pointer;
 }
