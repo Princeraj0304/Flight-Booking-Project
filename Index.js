@@ -392,6 +392,7 @@ if(state[i]){
 
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
+    
     p.style.visibility='visible'
     p.style.opacity='1'
     para.style.border='2px solid red'

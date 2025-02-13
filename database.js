@@ -267,9 +267,6 @@ function passadd(){
 }
 
 function updateform1(){
-
-  alert("updated")
-
   
   let frmdata={
     id : document.getElementById('addpassengerid').value,
@@ -278,6 +275,49 @@ function updateform1(){
     age : document.getElementById('addpassengerage').value,
     passportnumber: document.getElementById('addpassportnum').value,
 }
+
+
+if(frmdata.firstname==''){
+  let fne=document.getElementById('firstnameerror')
+  fne.innerHTML='please enter your first name'
+  fne.style.display='inline-block'
+  document.getElementById('addpassengerfname').focus()
+  return false
+}
+
+else if(frmdata.lastname==''){
+  let lne=document.getElementById('lastnameerror')
+  lne.innerHTML='please enter your last name'
+  lne.style.display='inline-block'
+  document.getElementById('addpassengerlname').focus()
+  return false
+}
+
+else if(frmdata.age==''){
+  let age=document.getElementById('ageerror')
+  age.innerHTML='please enter your age'
+  age.style.display='inline-block'
+  document.getElementById('addpassengerage').focus()
+  return false
+}
+
+else if(frmdata.passnumber==''){
+  let passnum=document.getElementById('numbererror')
+  passnum.innerHTML='please enter your passport number'
+  passnum.style.display='inline-block'
+  document.getElementById('addpassportnum').focus()
+  return false
+}
+
+else if(frmdata.passportnumber.length>8|| frmdata.passportnumber.length<8){
+  let passnum=document.getElementById('numbererror')
+  passnum.innerHTML='Please Enter valid 8 digit number'
+  passnum.style.display='inline-block'
+  document.getElementById('passportnum').focus()
+  return false
+}
+
+
 
 fetch('http://localhost:3000/passengers',{method : "POST",
   headers:{
