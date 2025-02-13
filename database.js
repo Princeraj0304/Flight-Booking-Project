@@ -10,23 +10,19 @@ let b=res.map((e)=>`
 <td>${e.lastname}</td> 
 <td>${e.age}</td> 
 <td>${e.passportnumber}</td> 
-<td><img src='x-button.png' width='25px' id='userid' onclick="mydelete('${e.id}')"></td>
+<td><img src='minus.png' width='25px' id='userid' onclick="mydelete('${e.id}')"></td>
 <td><img src='edit.png' width='25px' id='edituser' onclick="myedit('${e.id}')"></td>
 
 </tr>
+
 <tr>
 `).join('')
 
+b+=`<td><img src='add.png' onclick="return passadd()" id='addimg' ></td> </tr>`
+
 b+=`<td colspan="5">Total amount </td>
 <td colspan=3><span id='rupees'> ₹ <span id='tfare'> </span></td>
-</tr>`
-
-setTimeout(()=>{
-    let updatedfare=document.getElementById('tfare')
-    updatedfare.innerHTML=totalpass*prices.mumbai
-    let tflare= document.getElementById('passfare')
-    tflare.innerHTML=totalpass*prices.mumbai
-},)
+`
 
 
 document.getElementById('table').innerHTML=b
@@ -219,6 +215,82 @@ function validate(){
   
 
 }
+
+function passadd(){
+
+  let container=document.getElementById('updateform1')
+
+  if(container.innerHTML==''){
+    showform()
+
+  }
+
+  if(container.style.display==''){
+    container.style.display='block'
+     document.getElementById('addimg').src='x-button.png'
+  }
+  else{
+    container.style.display=''
+    document.getElementById('addimg').src='add.png'
+  }
+
+  function showform(){
+
+
+
+  let addform=`
+   <form>
+ 
+  <label for="id">ID</label>
+  <input type="text" name="" id="addpassengerid" ><br><br>
+
+   <label for="name">First Name</label><span id="firstnameerror"></span>
+   <input type="text" name="" id="addpassengerfname"><br><br>
+
+   <label for="name">Last Name</label><span id="lastnameerror"></span>
+   <input type="text" name="" id="addpassengerlname"><br><br>
+
+   <label for="name">Age</label><span id="ageerror"></span>
+   <input type="text" name="" id="addpassengerage"><br><br>
+
+   <label for="name">Passport Number</label><span id="numbererror"></span>
+   <input type="text" name="" id="addpassportnum"><br><br>
+
+   <input type="submit" name="" onclick="return updateform1()" id="updatebutton1" value="update">
+   </form>
+  
+  `
+
+  document.getElementById('updateform1').innerHTML=addform
+}
+
+}
+
+function updateform1(){
+
+  alert("updated")
+
+  
+  let frmdata={
+    id : document.getElementById('addpassengerid').value,
+    firstname : document.getElementById('addpassengerfname').value,
+    lastname : document.getElementById('addpassengerlname').value,
+    age : document.getElementById('addpassengerage').value,
+    passportnumber: document.getElementById('addpassportnum').value,
+}
+
+fetch('http://localhost:3000/passengers',{method : "POST",
+  headers:{
+      'Content-type': 'application/json'
+  }, 
+  body: JSON.stringify(frmdata)}
+).then(r=>alert("Passenger updated"))
+
+
+
+}
+
+
 
 
 

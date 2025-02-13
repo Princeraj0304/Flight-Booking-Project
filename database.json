@@ -1,11 +1,3 @@
 {
-  "passengers": [
-    {
-      "id": "c771",
-      "firstname": "Prince",
-      "lastname": "Raj",
-      "age": "20",
-      "passportnumber": "12345678"
-    }
-  ]
+  "passengers": []
 }

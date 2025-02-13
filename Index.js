@@ -260,7 +260,7 @@ function showdropdown(){
 
 }
 
-
+//TOTAL FARE PRICE
 
 let passdetails= JSON.parse(localStorage.getItem('traveldetails'))
 let totalpass=passdetails.passengers

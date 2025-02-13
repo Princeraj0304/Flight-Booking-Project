@@ -246,6 +246,8 @@ input::placeholder{
     background-size: cover;
 }
 
+
+
 .content{
     padding-top: 60px;
     padding-left: 150px;
@@ -915,8 +917,8 @@ input:-webkit-autofill {
     font-size: 50px;
     margin-left: 20px;
     margin-top: 20px;
-    font-weight: 600;
-    color: #6f2020;
+    font-weight: 450;
+    color: #c60c31;
 }
 
 #deti{
@@ -927,39 +929,6 @@ input:-webkit-autofill {
 
 }
 
-
-.pasify{
-    display: flex;
-    margin-top: 80px;
-    font-family:  "Montserrat", serif;
-    margin-left: 30px;
-    gap: 400px;
-    font-size: 25px;
-}
-.pasify p{
-   margin-top: 20px;
-   font-weight: 400;
-}
-
-.pasify span{
-    color: #43a54e;
-    font-weight: 700;
-   
-}
-
-.pasify #rupee{
-    color: #43a54e;
-}
-
-.pasify button{
-    padding: 15px 50px;
-    border-radius: 50px;
-    color: white;
-    font-family:  "Montserrat", serif;
-    background-color: #c60c31;
-    border: none;
-    cursor: pointer;
-}
 
 
 #rupees{
@@ -1017,6 +986,73 @@ input:-webkit-autofill {
 }
 
 #updateform #updatebutton {
+    background-color: #c60c31;
+    width: 530px;
+    color: white;
+    border: none;
+    font-family:  "Montserrat", serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#addimg{
+    cursor: pointer;
+    width: 25px;
+}
+
+
+
+
+#updateform1{
+    padding-bottom: 15px;
+    display: none;
+}
+
+#updateform1 form{
+    padding-top: 20px;
+    width: 580px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    position: absolute;
+    left: 920px;
+    top: 100px;
+    background-color: white ;
+    border-radius: 10px;
+    border: none;
+    font-family:  "Montserrat", serif;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+#updateform1 input{
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:  "Montserrat", serif;
+
+   
+}
+
+
+#updateform1 label{
+    margin-left: 20px;
+    font-weight: 450;
+    cursor: pointer;
+    font-weight: 600;
+    color: red;
+    font-family:  "Montserrat", serif;
+    
+}
+
+#updateform1 #updatebutton1 {
     background-color: #c60c31;
     width: 530px;
     color: white;
