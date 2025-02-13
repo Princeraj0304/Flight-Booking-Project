@@ -239,10 +239,7 @@ function passadd(){
 
 
   let addform=`
-   <form>
- 
-  <label for="id">ID</label>
-  <input type="text" name="" id="addpassengerid" ><br><br>
+   <form >
 
    <label for="name">First Name</label><span id="firstnameerror"></span>
    <input type="text" name="" id="addpassengerfname"><br><br>
@@ -325,7 +322,7 @@ fetch('http://localhost:3000/passengers',{method : "POST",
   }, 
   body: JSON.stringify(frmdata)}
 ).then(r=>alert("Passenger updated"))
-
+return false
 
 
 }
