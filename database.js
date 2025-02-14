@@ -250,10 +250,20 @@ function passadd(){
    <label for="name">Age</label><span id="ageerror"></span>
    <input type="text" name="" id="addpassengerage"><br><br>
 
+   <label for="">Nationality</label><br>
+<select name="" id="nationselecting">
+   <option value="Indian">Indian</option>
+   <option value="japan">Japan</option>
+   <option value="British">British</option>
+   <option value="brazil">Brazil</option>
+   <option value="italy">Italy</option>
+</select>
+<br><br>
+
    <label for="name">Passport Number</label><span id="numbererror"></span>
    <input type="text" name="" id="addpassportnum"><br><br>
 
-   <input type="submit" name="" onclick="return updateform1()" id="updatebutton1" value="update">
+   <input type="submit" name="" onclick="return updateform1()" id="updatebutton1" value="Add">
    </form>
   
   `
@@ -265,8 +275,8 @@ function passadd(){
 
 function updateform1(){
   
+
   let frmdata={
-    id : document.getElementById('addpassengerid').value,
     firstname : document.getElementById('addpassengerfname').value,
     lastname : document.getElementById('addpassengerlname').value,
     age : document.getElementById('addpassengerage').value,
@@ -322,9 +332,6 @@ fetch('http://localhost:3000/passengers',{method : "POST",
   }, 
   body: JSON.stringify(frmdata)}
 ).then(r=>alert("Passenger updated"))
-return false
-
-
 }
 
 
