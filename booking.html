@@ -173,28 +173,29 @@
 
                </div>
 
-               <div class="xyz">
+               <div class="xyz" data-aos="fade-up"
+               data-aos-anchor-placement="bottom-bottom">
                 <p>Start planning your next trip</p>
                 <span>Thinking of travelling somewhere soon? Here are some options to help you get started.</span>
                </div>
               
                <div class="trip-planner">
-                <div class="tp1">
+                <div class="tp1" >
                     <div class="tpi"><img src="1st.jpg" alt=""></div>
                     <p class="tpip">Start planning your next trip</p>
                     <hr>
                     <p class="tpipp">Find great fares</p>
                 </div>
 
-                <div class="tp1">
+                <div class="tp1" >
                     <div class="tpi"><img src="2nd.jpg" alt=""></div>
                     <p class="tpip">Stopover in Qatar in less than $14</p>
                     <hr>
                     <p class="tpipp">Discover more</p>
 
                 </div>
-
-                <div class="tp1">
+                 
+                <div class="tp1" >
                     <div class="tpi"><img src="3rd.jpg" alt=""></div>
                     <p class="tpip">Get your Previlage Club credit Card </p>
                     <hr>
@@ -231,7 +232,12 @@
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init(
+        {
+            duration :800,
+            delay :0,
+        }
+    );
   </script>
 <script src="Index.js"></script>
 </html>

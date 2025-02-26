@@ -205,15 +205,24 @@ let adcount=0
 let chcount=0
 let incount=0
 
+function updatecounter(){
+    document.getElementById('adultcounter').innerHTML=adcount
+    document.getElementById('childcounter').innerHTML=chcount
+    document.getElementById('infantcounter').innerHTML=incount
+    document.getElementById('totalpassenger').innerHTML=adcount+chcount+incount
+}
+
 function adultadd(){
     adcount++
-    document.getElementById('adultcounter').innerHTML=adcount
+    updatecounter()
+    
 }
 
 function adultsub(){
     if(adcount>0){
     adcount--
-    document.getElementById('adultcounter').innerHTML=adcount
+    updatecounter()
+    
 }
 
 }
@@ -222,13 +231,15 @@ function adultsub(){
 
 function childadd(){
     chcount++
-    document.getElementById('childcounter').innerHTML=chcount
+    updatecounter()
+
 }
 
 function childsub(){
     if(chcount>0){
     chcount--
-    document.getElementById('childcounter').innerHTML=chcount
+    updatecounter()
+    
 }
 
 }
@@ -236,27 +247,35 @@ function childsub(){
 
 function infantadd(){
     incount++
-    document.getElementById('infantcounter').innerHTML=incount
+    updatecounter()
+    
 }
 
 function infantsub(){
     if(incount>0){
     incount--
-    document.getElementById('infantcounter').innerHTML=incount
+    updatecounter()
 }
 
 }
 
 function totalcount(){
-      document.getElementById('totalpassenger').innerHTML=adcount+chcount+incount
       let hide=document.querySelector('.dropdown')
+      updatecounter()
       hide.style.display='none'
 }
 
 
 function showdropdown(){
     let hide=document.querySelector('.dropdown')
-    hide.style.display='block'
+    hide.style.display = hide.style.display === 'block' ? 'none' : 'block';
+
+    // if(hide.style.display=='none' || hide.style.display == ''){
+    //     hide.style.display='block'
+    // }
+    // else{
+    //     hide.style.display='none'
+    // }
 
 }
 
