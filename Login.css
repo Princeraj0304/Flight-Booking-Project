@@ -536,6 +536,7 @@ input:-webkit-autofill {
     background-color: white;
     border: none;
     display: none;
+    z-index: 1;
  }
 
  .dropdown p{
@@ -1102,6 +1103,7 @@ input:-webkit-autofill {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    z-index: 0;
     
 }
 
