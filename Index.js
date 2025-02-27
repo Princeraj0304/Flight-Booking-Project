@@ -404,6 +404,7 @@ let para=document.createElement('div')
 let det=document.createElement('p')
 let q=document.getElementById('det')
 det.innerHTML='passenger '+ arr[i]
+
 q.appendChild(det)
 
 
@@ -414,19 +415,30 @@ para.style.marginLeft='55px'
 
 
 if(state[i]){
-    para.style.backgroundImage="url('success.gif')"
+    para.style.backgroundImage="url('correct.png')"
+    det.style.backgroundColor='#03de46'
+    para.style.border='2px solid #111'
+    det.style.color='black'
 }
+
+let butt=0
 
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
     
     p.style.visibility='visible'
     p.style.opacity='1'
-    para.style.border='2px solid red'
+
+    
       
     state[i]=1
     localStorage.setItem('state',JSON.stringify(state))
-    para.style.backgroundImage="url('success.gif')"
+    para.style.backgroundImage="url('correct.png')"
+    det.style.backgroundColor='#03de46'
+    det.style.color='black'
+    para.style.border='2px solid #111'
+    alert("Enter the Details of the Passenger no  " + arr[i])
+    
 
 })
 }
