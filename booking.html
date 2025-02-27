@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="Login.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <header>
@@ -88,7 +89,7 @@
                    <input type="text" placeholder="New York NYC" id="to">
                </div>
                <div class="depart">
-                   <input type="text" name="" id="date" placeholder="Day/Month/Year" >
+                   <input type="date" name="" id="date" placeholder="Day/Month/Year" >
                </div>
 
 
@@ -238,6 +239,16 @@
             delay :0,
         }
     );
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <input type="text" id="datepicker" placeholder="Select Date">
+  
+  <script>
+      flatpickr("#date", {
+          dateFormat: "Y-m-d",
+          disableMobile: "true"
+      });
   </script>
 <script src="Index.js"></script>
 </html>

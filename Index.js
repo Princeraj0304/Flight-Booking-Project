@@ -397,11 +397,19 @@ let d=document.getElementById('deti')
 
 let state=JSON.parse(localStorage.getItem('state')) || Array(b).fill(0)
 
+let arr=['1','2','3','4']
+
 for(let i=0;i<b;i++){
 let para=document.createElement('div')
+let det=document.createElement('p')
+let q=document.getElementById('det')
+det.innerHTML='passenger '+ arr[i]
+q.appendChild(det)
+
 
 para.classList.add('bookingformappear')
 d.appendChild(para)
+
 para.style.marginLeft='55px'
 
 
