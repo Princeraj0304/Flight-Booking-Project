@@ -411,7 +411,7 @@ q.appendChild(det)
 para.classList.add('bookingformappear')
 d.appendChild(para)
 
-para.style.marginLeft='55px'
+para.style.marginLeft='65px'
 
 
 if(state[i]){

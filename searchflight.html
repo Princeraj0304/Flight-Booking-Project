@@ -41,20 +41,65 @@
         </div>
 
         <div class="travelfromto">
-            <p>select your departure flight</p>
-            <p>from <span id="travelfrom"></span> to <span id="travelto"></span></p>
+            <p>select your departure flight
+           from <span id="travelfrom"></span> to <span id="travelto"></span></p>
         </div>
-        <div class="travelfromtoo">
-            <p>Who's Travelling ?</p>
+        <br><br>
+        <div class="xyz">
+                <p>Hundreds of Global Destinations</p>
+                <span>Thinking of travelling somewhere soon? Here are some options to help you get started.</span>
+               </div>
+              
+               <div class="trip-planner">
+                <div class="tp1">
+                    <div class="tpi"><img src="h2-kenya-tourism-board-safari.jpg" alt=""></div>
+                    <p class="tpip">Start planning your next trip</p>
+                    <hr>
+                    <p class="tpipp">Find great fares</p>
+                </div>
+
+                <div class="tp1" >
+                    <div class="tpi"><img src="h3-amritsar-india.jpg" alt=""></div>
+                    <p class="tpip">Stopover in Qatar in less than $14</p>
+                    <hr>
+                    <p class="tpipp">Discover more</p>
+
+                </div>
+                 
+                <div class="tp1">
+                    <div class="tpi"><img src="h3-dhaka-lalbagh-fort.jpg" alt=""></div>
+                    <p class="tpip">Get your Previlage Club credit Card </p>
+                    <hr>
+                    <p class="tpipp">Learn more</p>
+                </div>
+
+                <div class="tp1">
+                    <div class="tpi"><img src="h3-maldives.jpg" alt="" ></div>
+                    <p class="tpip">American Airlines Partners</p>
+                    <hr>
+                    <p class="tpipp">Learn More</p>
+                </div>
+               
+               </div>
+                
+               <section class="levelling" data-aos="fade-up"
+               data-aos-anchor-placement="top-bottom">
+                
+               </section>
+               
+               
+        <div class="travelfromtoo"  data-aos="fade-right">
+            <p>Please enter Passengers Details ?</p>
         </div>
         <br>
     </main>
 <br>
   
+<div class="dedd"  data-aos="fade-right">
 <div id="det">
 </div><br>
     <div id="deti"></div>
-   
+</div>
     
 
     <section class="passformii">
@@ -97,12 +142,12 @@
         
 <br><br>
       
-        <input type="submit" name="" id="sfsub" value="save and continue">
+        <input type="submit" name="" id="sfsub" value="save and continue" >
         </form>
     </section>
     
 </div>
-<a href="database.html"><button id="searchflightbutton" onclick="resetbutton()">Confirm</button></a>
+<a href="database.html"><button id="searchflightbutton" onclick="resetbutton()" >Confirm</button></a>
 
 
 <div class="toggle">
@@ -131,7 +176,11 @@
     <script src="database.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration :800,
+            delay :0,
+        });
+        
       </script>
 </body>
 </html>
