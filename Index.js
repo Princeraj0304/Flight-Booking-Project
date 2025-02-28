@@ -426,7 +426,7 @@ let b=a.passengers
 
 let d=document.getElementById('deti')
 
-let state=JSON.parse(localStorage.getItem('state')) || Array(b).fill(0)
+let state=JSON.parse(sessionStorage.getItem('state')) || Array(b).fill(0)
 
 let arr=['1','2','3','4']
 
@@ -452,7 +452,6 @@ if(state[i]){
     det.style.color='black'
 }
 
-let butt=0
 
 para.addEventListener('click',()=>{
     let p=document.querySelector('.passformii')
@@ -463,7 +462,7 @@ para.addEventListener('click',()=>{
     
       
     state[i]=1
-    localStorage.setItem('state',JSON.stringify(state))
+    sessionStorage.setItem('state',JSON.stringify(state))
     para.style.backgroundImage="url('correct.png')"
     det.style.backgroundColor='#03de46'
     det.style.color='black'

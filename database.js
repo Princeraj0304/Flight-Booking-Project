@@ -210,9 +210,9 @@ function validate(){
                                            }, 
                                            body: JSON.stringify(getdata)}
          ).then(r=>alert("Passenger updated"))
-
-
-  
+    
+         window.location.hash = '#hash'; 
+         location.reload();
 
 }
 
