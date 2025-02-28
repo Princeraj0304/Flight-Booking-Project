@@ -181,6 +181,10 @@ function book() {
    let a= JSON.parse(localStorage.getItem('traveldetails'))
  
    let from=document.getElementById('travelfrom')
+   let xx=document.getElementById('xx')
+   let yy=document.getElementById('yy')
+   xx.innerHTML=a.from
+
    from.innerHTML=a.from
    from.style.color='#c60c31'
 
@@ -188,9 +192,12 @@ function book() {
    let to=document.getElementById('travelto')
 
    to.innerHTML=a.to
+   yy.innerHTML=a.to
    to.style.color='#c60c31'
 
    let date=document.getElementById('traveldate')
+   let zz=document.getElementById('zz')
+   zz.innerHTML=a.date
    date.innerHTML=a.date
    date.style.color='#c60c31'
  
@@ -301,6 +308,8 @@ setTimeout(()=>{
 
 if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='mumbai'){
    let updatedfare=document.getElementById('tfare')
+   let total=document.getElementById('grandtotal')
+   total.innerHTML=totalpass*prices.mumbai
    updatedfare.innerHTML=totalpass*prices.mumbai
    let tflare= document.getElementById('passfare')
    tflare.innerHTML=totalpass*prices.mumbai
@@ -309,6 +318,8 @@ if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='mumbai'){
 
 else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.mumbai
     updatedfare.innerHTML=totalpass*prices.mumbai
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.mumbai
@@ -316,6 +327,8 @@ else if(passfrom.toLowerCase()=='mumbai' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='delhi'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.delhi
     updatedfare.innerHTML=totalpass*prices.delhi
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.delhi
@@ -323,6 +336,8 @@ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='delhi'){
 
 else if(passfrom.toLowerCase()=='delhi' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.delhi
     updatedfare.innerHTML=totalpass*prices.delhi
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.delhi
@@ -330,6 +345,8 @@ else if(passfrom.toLowerCase()=='delhi' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='indore'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.indore
     updatedfare.innerHTML=totalpass*prices.indore
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.indore
@@ -337,6 +354,8 @@ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='indore'){
 
 else if(passfrom.toLowerCase()=='indore' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.indore
     updatedfare.innerHTML=totalpass*prices.indore
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.indore
@@ -344,6 +363,8 @@ else if(passfrom.toLowerCase()=='indore' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='patna' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.indore
     updatedfare.innerHTML=totalpass*prices.patna
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.patna
@@ -351,6 +372,8 @@ else if(passfrom.toLowerCase()=='patna' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='patna'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.patna
     updatedfare.innerHTML=totalpass*prices.patna
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.patna
@@ -358,6 +381,8 @@ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='patna'){
 
 else if(passfrom.toLowerCase()=='banglore' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.patna
     updatedfare.innerHTML=totalpass*prices.bangalore
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.bangalore
@@ -365,6 +390,8 @@ else if(passfrom.toLowerCase()=='banglore' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='banglore'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.bangalore
     updatedfare.innerHTML=totalpass*prices.bangalore
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.bangalore
@@ -372,6 +399,8 @@ else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='banglore'){
 
 else if(passfrom.toLowerCase()=='pune' && passto.toLowerCase()=='bhopal'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.pune
     updatedfare.innerHTML=totalpass*prices.pune
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.pune
@@ -379,6 +408,8 @@ else if(passfrom.toLowerCase()=='pune' && passto.toLowerCase()=='bhopal'){
 
 else if(passfrom.toLowerCase()=='bhopal' && passto.toLowerCase()=='pune'){
     let updatedfare=document.getElementById('tfare')
+    let total=document.getElementById('grandtotal')
+    total.innerHTML=totalpass*prices.pune
     updatedfare.innerHTML=totalpass*prices.pune
     let tflare= document.getElementById('passfare')
     tflare.innerHTML=totalpass*prices.pune
@@ -417,7 +448,7 @@ para.style.marginLeft='65px'
 if(state[i]){
     para.style.backgroundImage="url('correct.png')"
     det.style.backgroundColor='#03de46'
-    para.style.border='2px solid #111'
+    para.style.border='none'
     det.style.color='black'
 }
 
@@ -436,7 +467,7 @@ para.addEventListener('click',()=>{
     para.style.backgroundImage="url('correct.png')"
     det.style.backgroundColor='#03de46'
     det.style.color='black'
-    para.style.border='2px solid #111'
+    para.style.border='none'
     alert("Enter the Details of the Passenger no  " + arr[i])
     
 

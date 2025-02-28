@@ -1,3 +1,18 @@
 {
-  "passengers": []
+  "passengers": [
+    {
+      "id": "fb63",
+      "firstname": "Prince",
+      "lastname": "Sharma",
+      "age": "20",
+      "passportnumber": "12345678"
+    },
+    {
+      "id": "186e",
+      "firstname": "Prince",
+      "lastname": "Raj",
+      "age": "23",
+      "passportnumber": "12345678"
+    }
+  ]
 }
