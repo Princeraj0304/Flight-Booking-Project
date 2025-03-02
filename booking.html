@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="Login.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 <body>
+   
     <header>
         <section class="booking_header">
         <div class="head1">
@@ -33,20 +36,24 @@
         </div>
         </section>
     </header>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="ludovico-lovisetto-t-BU61kt6Cw-unsplash.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="david-edelstein-N4DbvTUDikw-unsplash.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="felfin-felfin-5MV818tzxeo-unsplash.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="h1-b777-economy-family-dining-hn.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="tianshu-liu-aqZ3UAjs_M4-unsplash.jpg" alt=""></div>
+        
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
     <main>
       
         
-        <div class="background">
-            <div class="content">
-            <p>It’s arrived, the</p>
-            <p class="premium">PREMIUM ECONOMY</p>
-            <p>you’ve been waiting for</p>
-            <button>Learn More</button>
-            </div>
-
-        </div>
-
+       
         
         <section class="bookingform">
 
@@ -114,7 +121,7 @@
                
             </div>
             <div class="promo">
-           <button onclick="return book()"> <a href="searchflight.html" target="_blank"> Search Flight</button></a>
+           <button onclick="return book()"> <a href="index.html" target="_blank"> Search Flight</button></a>
             </div>
             
            </div>
@@ -231,17 +238,47 @@
 
   
 </body>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init(
         {
-            duration :800,
+            duration :600,
             delay :0,
         }
     );
   </script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".mySwiper", {
+            effect: "slide-in", 
+            fadeEffect: { crossFade: true }, 
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+</script>
 
   
   <script>
@@ -250,5 +287,9 @@
           disableMobile: "true"
       });
   </script>
+ 
+  </script>
 <script src="Index.js"></script>
+
+
 </html>

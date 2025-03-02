@@ -217,6 +217,7 @@ function updatecounter(){
     document.getElementById('childcounter').innerHTML=chcount
     document.getElementById('infantcounter').innerHTML=incount
     document.getElementById('totalpassenger').innerHTML=adcount+chcount+incount
+    
 }
 
 function adultadd(){
@@ -274,8 +275,11 @@ function totalcount(){
 
 
 function showdropdown(){
+    
     let hide=document.querySelector('.dropdown')
     hide.style.display = hide.style.display === 'block' ? 'none' : 'block';
+
+   
 
     // if(hide.style.display=='none' || hide.style.display == ''){
     //     hide.style.display='block'
@@ -458,6 +462,9 @@ para.addEventListener('click',()=>{
     
     p.style.visibility='visible'
     p.style.opacity='1'
+    p.style.transform='translateX(-50px)'
+    
+
 
     
       
@@ -467,15 +474,15 @@ para.addEventListener('click',()=>{
     det.style.backgroundColor='#03de46'
     det.style.color='black'
     para.style.border='none'
-    alert("Enter the Details of the Passenger no  " + arr[i])
+    
     
 
 })
 }
 
-function resetbutton(){
-    localStorage.removeItem('state')
-    location.reload()
-}
+// function resetbutton(){
+//     sessionStorage.removeItem('state')
+//     location.reload()
+// }
 
 

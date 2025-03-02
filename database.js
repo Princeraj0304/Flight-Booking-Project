@@ -20,9 +20,7 @@ let b=res.map((e)=>`
 
 b+=`<td><img src='add.png' onclick="return passadd()" id='addimg' ></td> </tr>`
 
-b+=`<td colspan="5">Total amount </td>
-<td colspan=3><span id='rupees'> ₹ <span id='tfare'> </span></td>
-`
+
 
 
 document.getElementById('table').innerHTML=b
@@ -219,15 +217,18 @@ function validate(){
 function passadd(){
 
   let container=document.getElementById('updateform1')
+  
 
   if(container.innerHTML==''){
     showform()
+    
 
   }
 
   if(container.style.display==''){
     container.style.display='block'
      document.getElementById('addimg').src='x-button.png'
+    
   }
   else{
     container.style.display=''

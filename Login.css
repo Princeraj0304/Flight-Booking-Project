@@ -40,8 +40,8 @@ body{
 
 .logintext .para {
   color: #333333;
-  font-weight: 600;
-  color:  #750f34;
+  font-weight: 450;
+  color:  #6f2020;
   font-size: 45px;
   font-family: "Montserrat", serif;
   display: flex;
@@ -152,9 +152,10 @@ body{
     margin-bottom: 20px;
     background-color:  #750f34;
     color: white;
+    font-size: 15px;
     font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     
 }
@@ -244,12 +245,6 @@ input::placeholder{
     color: white;
 }
 
-.background{
-    background-image: url(h1-b777-economy-family-dining-hn.jpg);
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-}
 
 
 
@@ -286,13 +281,14 @@ input::placeholder{
 
 .bookingform{
     position: relative;
-    bottom: 60px;
+    bottom: 70px;
     width: 80%;
     height: 270px;
     margin-left: 150px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    z-index: 1;
 
 }
 
@@ -340,6 +336,7 @@ input::placeholder{
 
 
 
+
 .from {
     border: 1px solid #d1d1d4;
     width: 25%;
@@ -380,9 +377,11 @@ input::placeholder{
     outline: none;
     margin-left: 20px;
     margin-top: 16px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     color: #1f222a;
+    font-family:  "Montserrat", serif;
+    font-weight: 450;
 }
 
 
@@ -391,10 +390,11 @@ input::placeholder{
     outline: none;
     margin-left: 20px;
     margin-top: 16px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     color: #1f222a;
-    
+    font-family:  "Montserrat", serif;
+    font-weight: 450;
 }
 
 .depart input{
@@ -402,11 +402,12 @@ input::placeholder{
     outline: none;
     margin-left: 20px;
     margin-top: 16px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     color: #1f222a;
     cursor: pointer;
-   
+    font-family:  "Montserrat", serif;
+    font-weight: 450;
 }
 
 .passclass select{
@@ -416,6 +417,9 @@ input::placeholder{
     font-size: 20px;
     cursor: pointer;
     color: #1f222a;
+    font-family:  "Montserrat", serif;
+    
+    
 }
 
 .boook{
@@ -566,7 +570,7 @@ input:-webkit-autofill {
   
  .dropdown{
     position: absolute;
-    top: 620px;
+    top: 601px;
     left: 1000px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
     border-radius: 10px;
@@ -765,7 +769,7 @@ input:-webkit-autofill {
     font-family:  "Montserrat", serif;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
 .bss{
@@ -800,6 +804,7 @@ input:-webkit-autofill {
     cursor: pointer;
 
 }
+
 
 .passformii label{
     margin-left: 20px;
@@ -952,7 +957,7 @@ input:-webkit-autofill {
 }
 
 .passengertable thead tr{
-    background-color: #c60c31;
+    background-color: #750f34;
     color: white;
     text-align: left;
 }
@@ -972,7 +977,7 @@ input:-webkit-autofill {
 }
 
 .passengertable tbody tr:last-of-type{
-    border-bottom: 2px solid #c60c31;
+    border-bottom: 2px solid #6f2020;
 }
 
 
@@ -993,7 +998,7 @@ input:-webkit-autofill {
     margin-left: 20px;
     margin-top: 20px;
     font-weight: 450;
-    color: #c60c31;
+    color: #750f34;
 }
 
 #deti{
@@ -1029,7 +1034,7 @@ input:-webkit-autofill {
     font-family:  "Montserrat", serif;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
 
@@ -1054,16 +1059,18 @@ input:-webkit-autofill {
     font-weight: 450;
     cursor: pointer;
     font-weight: 600;
-    color: red;
+    color: black;
     font-family:  "Montserrat", serif;
     
 }
 
 #updateform #updatebutton {
-    background-color: #c60c31;
+    background-color: #8d2057;
+    font-weight: 600;
     width: 530px;
     color: white;
     border: none;
+    border-radius: 50px;
     font-family:  "Montserrat", serif;
     font-size: 15px;
     cursor: pointer;
@@ -1080,6 +1087,7 @@ input:-webkit-autofill {
 #updateform1{
     padding-bottom: 15px;
     display: none;
+   
 }
 
 #updateform1 form{
@@ -1096,8 +1104,36 @@ input:-webkit-autofill {
     font-family:  "Montserrat", serif;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    
 }
+
+
+.swiper {
+    width: 100%;
+    height: 60%;
+    z-index: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+
+  .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
 #updateform1 input{
@@ -1121,13 +1157,14 @@ input:-webkit-autofill {
     font-weight: 450;
     cursor: pointer;
     font-weight: 600;
-    color: red;
+    color: black;
     font-family:  "Montserrat", serif;
     
 }
 
 #updateform1 #updatebutton1 {
-    background-color: #c60c31;
+    background-color: #8d2057;
+    border-radius: 50px;
     width: 530px;
     color: white;
     border: none;
@@ -1338,10 +1375,11 @@ input:-webkit-autofill {
     color: white;
     background-color: #8f2158;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 25px;
     padding: 15px 200px;
     margin-left: 20px;
+    font-size: 15px;
     
 }
 
