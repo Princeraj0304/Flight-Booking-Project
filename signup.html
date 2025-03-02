@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>signup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="Login.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -19,39 +18,40 @@
         <div class="loginheader">
             <img src="emirates-logo-badge-registered.png" alt="">
             <div class="logsig">
-               <a href="Login.html"><p>LogIn</p></a>
-               <a href="index.html"><p>SignUp</p></a>
-            </div>
+                <a href="Login.html"><p>LogIn</p></a>
+                <a href="signup.html"><p>SignUp</p></a>
+             </div>
         </div>
     </section>
    </header>
 
    <main>
     <div class="logintext">
-      <p class="para">Log in to Emirates</p>
+      <p class="para">Sign in to Emirates</p>
       <p>Earn Miles every time you fly with us and our partners. <br>And spend your Skywards Miles on a world of rewards.</p>
     </div>
 
     
         <section class="box">
             <div class="login_form">
-                <form action="searchflight.html" target="_blank" onsubmit="return sub()">
+                <form action="Login.html" onsubmit="return signin()">
                     <div class="signin">
-                        <h2>Log in</h2>
-                        <a href="booking.html" target="_blank">(Not a member? SignUp)</a>
-                    </div>
+                    <h2>Sign in</h2>
+                    <a href="Login.html">(Already a member? Login)</a>
+                </div>
                     <p id="error"></p>
+                    <input type="text" name="" placeholder="Enter your Mobile number" id="number"><br>
                     <input type="text" name="" placeholder="Enter your Email address" id="email"><br>
-                    <a href=""><p>Forget your email or account number ?</p></a>
-                    <input type="text" name="" placeholder="Enter your password" id="password"><br>
-                    <a href=""><p>Forget your password</p></a> 
+                    <input type="text" name="" placeholder="Enter your password" id="password"><br> 
+                    <input type="text" name="" placeholder="Enter your password again" id="cpassword"><br> 
                     <div class="check">
                         <input type="checkbox" name="" id="checkbox">
                         <span>Remember me on this device</span>
                     </div>
-                    <input type="submit" value="Log in" id="submit">
+                    <input type="submit" value="Sign in" id="submit">
                 </form>
             </div>
+        
 
             <div class="joinnow">
                 <h3>Not an Emirates Skywards <br>Not an Emirates Skywards member yet?</h3>
@@ -59,7 +59,6 @@
                 <a href=""><button>Join now</button></a>
             </div>
         </section>
-   
    </main>
 
    <footer>
@@ -75,6 +74,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="Index.js"></script>
 <script>
-    AOS.init();
+    AOS.init(
+        {   duration :300,
+            delay : 0.5,
+        }
+    );
   </script>
 </html>
