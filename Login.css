@@ -296,7 +296,9 @@ input::placeholder{
     display: flex;
     font-family:  "Montserrat", serif;
     justify-content: space-around;
-    color: gray;
+    color: #111;
+    font-weight: 550;
+    cursor: pointer;
 }
 
 .book p{
@@ -305,9 +307,10 @@ input::placeholder{
 
 
 .bookflight{
-    color: #c60c31;
-    font-weight: 500;
+    color: #6f2020;
+    font-weight: 600;
     cursor: pointer;
+   
 }
 
 .radio{
@@ -316,10 +319,15 @@ input::placeholder{
     font-family:  "Montserrat", serif;
     display: flex;
     gap: 20px;
+    color: #111;
+    font-weight: 550;
+    
 }
 
 .radio input{
     transform: scale(1.8);
+    accent-color:  #8d2057;
+    cursor: pointer;
 }
 
 .miniform{
@@ -341,6 +349,7 @@ input::placeholder{
     border: 1px solid #d1d1d4;
     width: 25%;
     border-radius: 10px 0 0 10px;
+  
  
 }
 
@@ -456,14 +465,14 @@ input::placeholder{
 
 .bookavios{
       font-family:  "Montserrat", serif;
-      color: #1f222a ;
-      margin-top: 20px;
+      color: #111 ;
       cursor: pointer;
+      font-weight: 550;
 }
 
 
 .bookavios input{
-    transform: scale(1.8);
+    transform: scale(1.7);
 }
  
 
@@ -685,7 +694,7 @@ input:-webkit-autofill {
     bottom: 144px;
     left: 52px;
     font-weight: 450;
-    color: gray;
+    color: #111;
 }
 
 #spanto{
@@ -695,7 +704,7 @@ input:-webkit-autofill {
     bottom: 144px;
     left: 340px;
     font-weight: 450;
-    color: gray;
+    color: #111;
 }
 
 #spandepart{
@@ -705,7 +714,7 @@ input:-webkit-autofill {
     bottom: 144px;
     left: 630px;
     font-weight: 450;
-    color: gray;
+     color: #111;
 }
 
 #spanpassenger{
@@ -715,7 +724,7 @@ input:-webkit-autofill {
     bottom: 144px;
     left: 917px;
     font-weight: 450;
-    color: gray;
+    color: #111;
 }
 
 #tpassenger{
@@ -1389,6 +1398,11 @@ input:-webkit-autofill {
 }
 
 
+.bookingformres{
+    display: none;
+ }
+ 
+
 
 
 @media screen and (max-width: 600px) {
@@ -1437,8 +1451,6 @@ input:-webkit-autofill {
  }
 
 
-
-
  .head1 .itemm{
    display: none;
  }
@@ -1447,6 +1459,87 @@ input:-webkit-autofill {
    position: relative;
    top: 700px;
  }
+
+ .bookingform{
+    display: none;
+ }
     
+ .bookingformres{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+ }
+
+ .bookingformres p{
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family:  "Montserrat", serif;
+    color: #750f34;
+ }
+
+ .radiores{
+    font-family:  "Montserrat", serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #111;
+    font-weight: 500;
+ }
+  
+ .radiores input{
+    transform: scale(1.5);
+    accent-color:  #8d2057;
+    cursor: pointer;
+    margin-left: 5px;
+   
+}
+
+.radiores label{
+    margin-left: 15px;
+}
+
+.miniformres {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.fromres input{
+padding: 10px;
+   width: 85%;
+   border-radius: 10px;
+}
+
+.tores input{
+    padding: 10px;
+    width: 85%;
+    border-radius: 10px;
+    margin-top: 10px;
+    }
+
+.departres input{
+    padding: 10px;
+    width: 85%;
+    border-radius: 10px;
+    margin-top: 10px;
+    }
+
+.passclassres{
+    border: 1px solid ;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 10px;
+}
+.passclassres p{
+    position: relative;
+    bottom: 15px;
+}
+
 }
 
