@@ -1541,5 +1541,17 @@ padding: 10px;
     bottom: 15px;
 }
 
+.lovedet{
+    width: 500px;
+    background-color: white;
+    height: 360px;
+    position: absolute;
+    right: 200px;
+    bottom: 200px;
+    border-radius: 20px;
+    font-family:  "Montserrat", serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
 }
 
